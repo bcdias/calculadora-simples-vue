@@ -25,7 +25,7 @@ const props = defineProps(['valor1', 'valor2', 'capturaValor1', 'capturaValor2',
         <div class="col-4">
             <label class="d-block">Resultado</label>
 
-            <input v-if="!props.resultado" class="w-100" type="text" required value='Preencha o campo em branco'>
+            <input v-if="!props.resultado" class="w-100" type="text" required value='0'>
             <input v-else-if="props.resultado == 'Infinity'" class="w-100" type="text" required value="Não é possível dividir por zero">
             <input v-else class="w-100" type="text" required :value="props.resultado">
         </div>
